@@ -1,4 +1,4 @@
-const House = require('./Items.js').House; // This seems to import the House module as defined in the items.js code
+const House = require('./House.js').House; // This seems to import the House module as defined in the items.js code
 const Location = require('./Items.js').Location; // This does the same, but imports the location module defined in items.js
 const Features = require('./Items.js').Features; // This imports the definitions for Features
 
