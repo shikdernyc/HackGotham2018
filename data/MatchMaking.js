@@ -8,6 +8,7 @@ let search = function(location, features, radius){
 
 let sortHouses = function(array){
     array.sort(function(a, b){
+        //TODO: Make sure it works with negative coordinates
         return (a.location.lat - b.location.lat)*10 + (a.location.long - b.location.long);
     })
 };
