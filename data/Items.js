@@ -3,10 +3,10 @@ function House(picture, location, features, Advertiser) {
     this.picture = picture; //use url
     this.features = features;
     this.Advertiser = Advertiser;
-    this.distanceTo = function (house) {
+    this.distanceTo = function (location) {
         //TODO: Change Parameter to location
-        const xDelta = house.location.lat - this.location.lat;
-        const yDelta = house.location.long - this.location.long;
+        const xDelta = location.lat - this.location.lat;
+        const yDelta = location.long - this.location.long;
         return Math.sqrt(Math.pow(xDelta, 2) + Math.pow(yDelta, 2))
     };
     this.toJSON = function () {
