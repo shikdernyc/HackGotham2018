@@ -1,6 +1,4 @@
-const House = require('./Items.js').House; // This seems to import the House module as defined in the items.js code
-const Location = require('./Items.js').Location; // This does the same, but imports the location module defined in items.js
-const Features = require('./Items.js').Features; // This imports the definitions for Features
+const RandomGenerator = require('./utils.js').RandomGenerator;
 
 let search = function(location, features, radius){
     // for each house within radius, return their values
@@ -13,34 +11,8 @@ let sortHouses = function(array){
     }) // Define HOW exactly we will sort the houses in the array
 };
 
-function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;
-} // For the purposes of obtaining random test houses
+let houses = RandomGenerator(20, [70,70], [50,50]);
 
-// --------------------------------------------------------------
-// TEST CASES TO CHECK THE FUNCTIONALITY OF OUR SORTING ALGORITHM
-// --------------------------------------------------------------
-
-//  house_ = new House("picture.com", new Location(lat, long), new Features(#bedrooms, sq. footage, accessibility, pet, parking)
-let house1 = new House("abcxyz.com", new Location(Math.floor(getRandomArbitrary(-2, 3)), Math.floor(getRandomArbitrary(-2, 3))),
-                        new Features(4, 100, true, true, true));
-let house2 = new House("abcxyz.com", new Location(Math.floor(getRandomArbitrary(-2, 3)), Math.floor(getRandomArbitrary(-2, 3))),
-                        new Features(4, 100, true, true, true));
-let house3 = new House("abcxyz.com", new Location(Math.floor(getRandomArbitrary(-2, 3)), Math.floor(getRandomArbitrary(-2, 3))),
-                        new Features(4, 100, true, true, true));
-let house4 = new House("abcxyz.com", new Location(Math.floor(getRandomArbitrary(-2, 3)), Math.floor(getRandomArbitrary(-2, 3))),
-                        new Features(4, 100, true, true, true));
-let house5 = new House("abcxyz.com", new Location(Math.floor(getRandomArbitrary(-2, 3)), Math.floor(getRandomArbitrary(-2, 3))),
-                        new Features(4, 100, true, true, true));
-let house6 = new House("abcxyz.com", new Location(Math.floor(getRandomArbitrary(-2, 3)), Math.floor(getRandomArbitrary(-2, 3))),
-                        new Features(4, 100, true, true, true));
-// ----------------------------------
-// PREPARING HOUSE ARRAY TO BE SORTED
-// ----------------------------------
-
-let houses = [house1, house2, house3, house4, house5, house6];
-
-console.dir(houses)
+console.dir(houses);
 sortHouses(houses);
-console.log("END OF SORTING")
-console.dir(houses)
+console.dir(houses);
