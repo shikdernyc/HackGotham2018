@@ -1,6 +1,13 @@
 class House {
     //TODO: Create a static House Array
+    static houses = [];
     //TODO: Create a static method for adding Houses to the Array
+    static addHouse(house){
+        House.houses.add(house);
+    }
+    static removeHouse(house) {
+        House.houses.splice(House.houses.indexOf(house), 1);
+    }
     //TODO: Create a Search
     constructor(picture, location, features, advertiser) {
         this.location = location; //array of lat, long
