@@ -1,8 +1,7 @@
 const fs = require("fs");
 class House {
-    constructor(picture, location, features, advertiser) {
+    constructor(location, features, advertiser) {
         this.location = location; //array of lat, long
-        this.picture = picture; //use url
         this.features = features;
         this.advertiser = advertiser;
     }
