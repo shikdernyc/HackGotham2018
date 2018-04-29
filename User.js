@@ -10,7 +10,7 @@ Advertiser = (username, contact, houses) => {
     this.houses = houses; //array
     this.addHouse = function (house) {
         houses.add(houses);
-    }
+    };
     this.removeHouse = function (house){
         house.remove(house);
     }

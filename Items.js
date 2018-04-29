@@ -14,7 +14,6 @@ function Features(numOfBedRoom, squareFootage, accessibility, petFriendly, parki
 console.dir(new Location(0,0)); //  Displays all the properties of an object/variable the console
 
 module.exports = {
-    House: House,
     Location: Location,
     Features: Features
 }; //  This makes these variables/objects available for importing (for use by other JavaScript files)
