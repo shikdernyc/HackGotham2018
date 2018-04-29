@@ -3,5 +3,6 @@ $(document).ready(() => {
    	$('#aditems').show();
    	$('#useritems').hide();
    	$('#map').hide();
+   	$('.house-list').hide();
   })
 })
