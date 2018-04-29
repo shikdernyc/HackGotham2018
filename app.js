@@ -2,7 +2,7 @@ const express        =        require("express");
 const bodyParser     =        require("body-parser");
 const app            =        express();
 
-app.use(express.static('public'))
+app.use(express.static('public'));
 const post = 3000;
 
 app.listen(post, function(){
@@ -14,7 +14,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.get('/',function(req,res){
-    res.sendFile(path.join('/public/main.html'));
+    //needs to be abs
+    res.sendFile('C:\\Users\\shikd\\WebstormProjects\\HackGotham2018\\public\\main.html');
     //__dirname : It will resolve to your project folder.
 });
 

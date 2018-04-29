@@ -14,23 +14,12 @@ class House {
             housesJson = JSON.parse(housesJson);
             //End of creating JSON
             housesJson.houses.push(house);
-            fs.writeFile('./houses.json', housesJson, (err)=>console.log(err));
-            console.log(housesJson);
+            //TODO: Create a new file and write housesJson to it
         })
     }
     //TODO: Create a Search
     static search(features, location, radius) {
-        let housesJson = "";
-        let houses = [];
-        fs.readFile('./houses.json', (error, data) =>{
-            housesJson = data;
-        });
-        for(house in housesJson){
-            if(house.distanceTo(location) < radius){
-                //TODO: Cross reference features
-            }
-        }
-        return houses;
+        //TODO: Read houses.json and find every house that matches our feature and search radius
     }
 
     static sortHouses() {
