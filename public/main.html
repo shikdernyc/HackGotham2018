@@ -31,13 +31,13 @@
 
 
         <div class="form-b">
-
+<div class="translucent-form-overlay">
         <div id=col-sm-4>
           <div id="useritems">
               <p>Please set all attributes for the property you are interested in.</p>
           <div class="center_div">
             <div class="user_div">
-              <form method="POST">
+              <form method="GET">
                 <label>Bedrooms: </label>
                 <br>
                 <input type="number" name="bed">
@@ -82,7 +82,9 @@
           </div>
           </div>
         </div>
+    </div>
 
+    <div class="translucent-form-overlay">
         <div id=col-sm-4>
           <div id="aditems">
               <p>Please set all attributes for the property you are listing.</p>
@@ -137,18 +139,18 @@
                   <br>
                   <input type="Text" name="phoneNumber">
                   <br><br>
-                  <button id="sub2">Submit</button>
+                  <a id="sub2" type="submit">Submit</a>
               </form>
             </div>
           </div>
         </div>
+      </div>
 
         <div id="col-sm-4">
           <div id="map" style="width:100%; height:615px" onresize="reshape()">My map will go here</div>
         </div>
 
       </div>
-
 
     </div>
     </div>
@@ -198,7 +200,7 @@
            </tbody>
         </table>
     </div>
- 
+
  </div>
 </div>
 </body>

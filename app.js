@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 
 app.get('/',function(req,res){
     //needs to be abs
-    res.sendFile('C:\\Users\\shikd\\WebstormProjects\\HackGotham2018\\public\\main.html');
+    res.sendFile('/users/carolinmancebo/documents/HackGotham2018/public/main.html'); 
 });
 
 app.post('/', function (req, res) {

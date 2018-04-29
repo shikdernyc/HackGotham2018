@@ -1,5 +1,5 @@
 p {
-    color: blue;
+    /* color: blue; */
     font-family: sans-serif;
 }
 .form-div {
@@ -11,8 +11,7 @@ p {
   width: 100%;
   min-height: 700px;
   background-image: url('./pictures/house-background.jpg');
-  background-size: cover;
-  /* background: hsla(180,0%,50%,0.25);  */ 
+  background-size:cover;
 }
 
 .center_div {
@@ -20,9 +19,12 @@ p {
   margin: 0 auto;
   text-align: left;
   padding-top: 15px;
-  /* background-color: black; */
+  border-top: black 1px solid;
 }
 
+#advert {
+  margin-bottom: 10px;
+}
 
 input {
   min-width: 300px;
@@ -34,13 +36,16 @@ header{
   text-align: center;
   font-size: 70px;
   padding-top: 10px;
+  border-bottom: black 1px solid;
 }
+
+
 footer{
   text-align: center;
   font-size: 15px;
   height: 50px;
-  /* background-color: red; */
-
+  border-top: black 1px solid;
+  margin-top: 2px;
 }
 
 footer p{
@@ -75,4 +80,18 @@ td {
 }
 .house-list h1 {
   text-align: center;
+}
+
+
+/* translucent  */
+.translucent-form-overlay {
+  /* max-width: 500px; */
+  /* width: 100%; */
+  background-color: rgba(54, 54, 54, 0.6);
+  /* padding: 20px; */
+  color: #fefefe;
+}
+
+.translucent-form-overlay .columns.row {
+  display: block;
 }
