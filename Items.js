@@ -3,11 +3,14 @@ function Location(lat, long) {
     this.long = long;
 }
 
-function Features(numOfBedRoom, squareFootage, accessibility, petFriendly, parking) {
+function Features(numOfBedRoom, utiliities, prices, type, squareFootage, accessibility, amenities, parking) {
     this.numOfBedRoom = numOfBedRoom;
-    this.squareFootage = squareFootage;
+    this.utilities = utiliities;
+    this.price = prices;
+    this.type = type;
+    this.squareFootage = squareFootage
     this.accessibility = accessibility;
-    this.petFriendly = petFriendly;
+    this.amenities = amenities;
     this.parking = parking;
 }
 
