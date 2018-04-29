@@ -22,7 +22,8 @@ app.use(bodyParser.json());
 
 app.get('/',function(req,res){
     //needs to be abs
-    res.sendFile('/users/carolinmancebo/documents/HackGotham2018/public/main.html'); 
+    res.sendFile('/users/carolinmancebo/documents/HackGotham2018/public/main.html');
+    // TODO: location needs to be manually added
 });
 
 app.post('/', function (req, res) {
